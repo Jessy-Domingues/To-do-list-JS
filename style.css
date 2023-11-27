@@ -1,0 +1,106 @@
+@charset "UTF-8";
+body {
+  min-height: 100vh;
+  color: white;
+  background-image: linear-gradient(120deg, #108cd9, #cb6262);
+}
+body h1 {
+  font-size: 2rem;
+}
+body h1, body form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body form input, body form button {
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: none;
+  background-color: white;
+}
+body form button {
+  color: #1392e7;
+  background: rgb(233, 226, 30);
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+body form button:hover {
+  color: rgb(233, 226, 30);
+  background-color: #1392e7;
+}
+body .search {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+body .search::after {
+  content: "▼";
+  position: absolute;
+  background: #1392e7;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  pointer-events: none;
+  transition: all 0.5s ease;
+}
+body .search:hover:after {
+  background: white;
+  color: #1392e7;
+}
+body .search select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  color: #1392e7;
+  width: 10rem;
+  cursor: pointer;
+  padding: 1rem;
+}
+body .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .container .todo-list {
+  min-width: 50%;
+  list-style: none;
+  margin: auto;
+}
+body .container .todo-list .todo {
+  margin: 1rem;
+  background: white;
+  color: #0b2231;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s ease;
+  box-shadow: 8px 8px 8px black;
+}
+body .container .todo-list .todo .todo-item {
+  flex: 1;
+  padding: 0rem 0.5rem;
+}
+body .container .todo-list .todo .complete-btn, body .container .todo-list .todo .trash-btn {
+  background: rgb(233, 30, 30);
+  color: #0b2231;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+}
+body .container .todo-list .todo .complete-btn {
+  background: rgb(73, 204, 73);
+}
+body .container .todo-list .todo .fa-check, body .container .todo-list .todo .fa-trash {
+  pointer-events: none;
+}
+body .container .todo-list .todo .fail {
+  opacity: 0;
+}
+body .container .done {
+  text-decoration: line-through;
+  opacity: 0.5;
+}/*# sourceMappingURL=style.css.map */
